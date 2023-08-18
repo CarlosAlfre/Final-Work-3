@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+}
+/*---------------------------------------------------------------------------*/
+
+
+/*-------------------------GRID-------------------------*/
+body{
+    display: grid;
+    grid-template-areas: 
+        "cab cab cab"
+        "sec pri pri"
+        "rod rod rod";
+    grid-gap: 5px;
+    grid-template-columns: 20% auto auto;
+    grid-template-rows: auto 1000px auto;
+}
+
+header{
+    grid-area: cab;
+}
+aside{
+    grid-area: sec;
+}
+main{
+    grid-area: pri;
+}
+footer{
+    grid-area: rod;
+}
+/*-------------------------GRID-------------------------*/
+
+
+/*-------------------------HEADER-------------------------*/
+header {
+    min-height: 100px;
+    position: relative;
+    background-color: #505a5a;
+} /*Esse é o cabeçalho da página.*/
+
+.logohead {
+    position:absolute;
+    width: 85px;
+    top: 10%;
+    left: 2%;
+}
+.logonome {
+    position: absolute;
+    font-weight: bold;
+    font-size: 25px;
+    color: #ffffff;
+    left: 8.3%;
+    top: 35%;
+}
+.logonomesmall {
+    position: absolute;
+    font-size: 15px;
+    color: #ad9c90;
+}
+
+nav {
+    position: absolute;
+    top: 42%;
+    right: 3%;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 15px;
+}
+nav a:hover {
+    color: #F8D0B4;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header li {
+    font-weight: bold;
+}
+header li:hover {
+    background-color: #6e625a;
+    border-radius: 8px;
+}
+
+.busca {
+    position: absolute;
+    top: 34%;
+    left: 36%;
+    background-color: #554f4b;
+    width: 350px;
+    height: 30px;
+    margin-right: 15px;
+    border-radius: 20px;
+}
+.lupa {
+    float: right;
+    width: 25px;
+    height: 25px;
+    margin-top: 2.5px;
+    margin-right: 2.5px;
+    background-color: #000000;
+    border-radius: 20px;
+}
+
+.separacao {
+    color: #c0a28c;
+}
+/*-------------------------HEADER-------------------------*/
+
+
+/*-------------------------BODY-------------------------*/
+body {
+    background-color: #101010;
+}
+/*----------MAIN----------*/
+main {
+    color: #ffffff;
+    text-align: center;
+}
+.titulomain {
+    font-size: 200%;
+}
+/*----------MAIN----------*/
+/*----------ASIDE----------*/
+aside {
+    background-color: #191919;
+    border: #202020 dashed;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 20px;
+}
+.topicosaside {
+    margin-top: 20px;
+    margin-bottom: 7px;
+}
+.topicosaside2 {
+    margin-bottom: 20px;
+}
+.topicosaside3{
+    margin-bottom: 20px;
+    margin-top:7px;
+}
+.topicosaside4{
+margin-bottom: 50px;
+}
+
+  
+    
+/*----------ASIDE----------*/
+
+/*-------------------------BODY-------------------------*/
+
+
+/*-------------------------FOOTER-------------------------*/
+footer {
+    background-color: #92450D;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.3%;
+}
+
+.um {
+    margin-bottom: 5px;
+}
+.dos, .tre {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.qua {
+    margin-top: 5px;
+}
+/*-------------------------FOOTER-------------------------*/
